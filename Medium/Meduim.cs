@@ -12,7 +12,10 @@ namespace Medium
             //Console.WriteLine(CompareVersion("1.0", "1.01"));
 
             //153.Find Minimum in Rotated Sorted Array
-            Console.WriteLine(FindMin(new[] { 3,2,1 }));
+            //Console.WriteLine(FindMin(new[] { 3,2,1 }));
+
+            //187.Repeated DNA Sequences
+            Console.Write(string.Join(", ", FindRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")));
         }
 
         //165.Compare Version Numbers
@@ -119,5 +122,42 @@ namespace Medium
 
             return centralIndex;
         }
+
+        //187.Repeated DNA Sequences
+        public static  IList<string> FindRepeatedDnaSequences(string s)
+        {
+            var res = new HashSet<string>();
+            const int Length = 10;
+            var hashtable = new Dictionary<char, int>
+            {
+                { 'A', 1 },
+                { 'C', 2 },
+                { 'G', 3 },
+                { 'T', 4 }
+            };
+            var hashtableFor10LengthString = new Dictionary<long, int>();
+
+            for (var i = 0; i < s.Length - 9; i++)
+            {
+                long rollingHash = 0;
+                for (var j = 0; j < Length; j++)
+                {
+                    // get rolling hash, base 10
+                    rollingHash = hashtable[s[i + j]] + rollingHash * 10;
+                }
+
+                if (hashtableFor10LengthString.ContainsKey(rollingHash))
+                {
+                    res.Add(s.Substring(i, 10));
+                }
+                else
+                {
+                    hashtableFor10LengthString.Add(rollingHash, i);
+                }
+            }
+
+            return res.ToList();
+        }
+       
     }
 }
