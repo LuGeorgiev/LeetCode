@@ -20,7 +20,18 @@ namespace Easy
             //Console.WriteLine(RemoveElement(new[] { 3, 2, 2, 3 },2));
 
             //198. House Robber
-            Console.WriteLine(Rob(new[] {2, 7, 9, 3, 1}));
+            //Console.WriteLine(Rob(new[] {2, 7, 9, 3, 1}));
+
+            //155. Min Stack
+            MinStack minStack = new MinStack();
+            minStack.Push(-2);
+            minStack.Push(0);
+            minStack.Push(-3);
+            Console.WriteLine(minStack.GetMin());
+            minStack.Pop();
+            Console.WriteLine(minStack.Top());
+            Console.WriteLine(minStack.GetMin());
+
         }
         //9. Palindrome Number
         public static bool IsPalindrome(int x)
