@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace SandBox
 {
@@ -6,7 +8,9 @@ namespace SandBox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(1/3m);
+            
         }
+
+        
     }
 }

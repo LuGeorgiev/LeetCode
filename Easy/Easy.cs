@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Easy
@@ -21,6 +22,10 @@ namespace Easy
 
             //198. House Robber
             Console.WriteLine(Rob(new[] {2, 7, 9, 3, 1}));
+
+            //949. Largest Time for Given Digits
+            var result = LargestTimeFromDigits(new int[] { 5, 5, 5, 4 });
+            Console.WriteLine(result);
         }
         //9. Palindrome Number
         public static bool IsPalindrome(int x)
@@ -171,6 +176,81 @@ namespace Easy
             }
 
             return result.OrderByDescending(x => x).ToArray()[0];
+        }
+
+        //949. Largest Time for Given Digits
+        public static string LargestTimeFromDigits(int[] A)
+        {
+            var options = A.ToList();
+            var firstValues = options
+                .Where(x => x < 3)
+                .OrderByDescending(x => x)
+                .ToList();
+            if (firstValues.Count == 0)
+            {
+                return "";
+            }
+            for (int i = 0; i < firstValues.Count; i++)
+            {
+                int hourFirst = firstValues[i];
+                options.Remove(firstValues[i]);
+
+                var secondValues = new List<int>();
+                if (hourFirst == 2)
+                {
+                    secondValues = options
+                        .Where(x => x <= 3)
+                        .OrderByDescending(x => x)
+                        .ToList();
+                }
+                else
+                {
+                    secondValues = options
+                      .Where(x => x <= 9)
+                      .OrderByDescending(x => x)
+                      .ToList();
+                }
+                if (secondValues.Count == 0)
+                {
+                    options.Add(firstValues[i]);
+                    continue;
+                }
+                for (int j = 0; j < secondValues.Count; j++)
+                {
+                    int hourSecond = secondValues[j];
+                    options.Remove(secondValues[j]);
+
+                    var thirdValues = options
+                        .Where(x => x <= 5)
+                        .OrderByDescending(x => x)
+                        .ToList();
+                    if (thirdValues.Count == 0)
+                    {
+                        options.Add(secondValues[j]);
+                        continue;
+                    }
+                    for (int k = 0; k < thirdValues.Count; k++)
+                    {
+                        int minutes = thirdValues[k];
+                        options.Remove(thirdValues[k]);
+
+                        if (options.Count > 0)
+                        {
+                            return $"{hourFirst}{hourSecond}:{minutes}{options[0]}";
+                        }
+
+                        options.Add(thirdValues[k]);
+                    }
+
+
+                    options.Add(secondValues[j]);
+                }
+
+                options.Add(firstValues[i]);
+
+            }
+
+            return "";
         }
     }
 }
