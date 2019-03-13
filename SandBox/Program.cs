@@ -8,8 +8,9 @@ namespace SandBox
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine(CanPlaceFlower(new[] { 1, 0, 0, 0,1, 0,0 },2));
         }
+
 
         
     }

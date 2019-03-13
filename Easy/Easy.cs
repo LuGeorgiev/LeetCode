@@ -21,26 +21,26 @@ namespace Easy
             //Console.WriteLine(RemoveElement(new[] { 3, 2, 2, 3 },2));
 
             //198. House Robber
-
-            Console.WriteLine(Rob(new[] {2, 7, 9, 3, 1}));
+            //Console.WriteLine(Rob(new[] {2, 7, 9, 3, 1}));
 
             //949. Largest Time for Given Digits
-            var result = LargestTimeFromDigits(new int[] { 5, 5, 5, 4 });
-            Console.WriteLine(result);
+            //var result = LargestTimeFromDigits(new int[] { 5, 5, 5, 4 });
+            //Console.WriteLine(result);
 
             //Console.WriteLine(Rob(new[] {2, 7, 9, 3, 1}));
 
             //155. Min Stack
-            MinStack minStack = new MinStack();
-            minStack.Push(-2);
-            minStack.Push(0);
-            minStack.Push(-3);
-            Console.WriteLine(minStack.GetMin());
-            minStack.Pop();
-            Console.WriteLine(minStack.Top());
-            Console.WriteLine(minStack.GetMin());
+            //MinStack minStack = new MinStack();
+            //minStack.Push(-2);
+            //minStack.Push(0);
+            //minStack.Push(-3);
+            //Console.WriteLine(minStack.GetMin());
+            //minStack.Pop();
+            //Console.WriteLine(minStack.Top());
+            //Console.WriteLine(minStack.GetMin());
 
-
+            //605. Can Place Flowers
+            Console.WriteLine(CanPlaceFlower(new[] { 1, 0, 0, 0, 1, 0, 0 }, 2));
         }
         //9. Palindrome Number
         public static bool IsPalindrome(int x)
@@ -266,6 +266,62 @@ namespace Easy
             }
 
             return "";
+        }
+
+        //605. Can Place Flowers
+        private static bool CanPlaceFlower(int[] flowerbed, int n)
+        {
+            int freePlaces = 0;
+            if (flowerbed.Length == 0)
+            {
+                return false;
+            }
+            else if (flowerbed.Length <= 2)
+            {
+                int plants = flowerbed.Sum(x => x);
+                freePlaces = 1 - plants;
+            }
+            else
+            {
+                // Array length is bigger than 3
+                bool previousIsZero = true;
+                bool nextIsZero;
+                for (int i = 0; i < flowerbed.Length; i++)
+                {
+                    if (flowerbed[i] == 0)
+                    {
+                        if (i == flowerbed.Length - 1)
+                        {
+                            nextIsZero = true;
+                        }
+                        else
+                        {
+                            nextIsZero = flowerbed[i + 1] == 0;
+                        }
+
+                        if (previousIsZero && nextIsZero)
+                        {
+                            freePlaces++;
+                            previousIsZero = false;
+                        }
+                        else
+                        {
+                            previousIsZero = true;
+                        }
+                    }
+                    else
+                    {
+                        previousIsZero = false;
+                    }
+                }
+            }
+
+            if (freePlaces >= n)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
