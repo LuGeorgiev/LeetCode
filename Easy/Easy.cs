@@ -40,7 +40,10 @@ namespace Easy
             //Console.WriteLine(minStack.GetMin());
 
             //605. Can Place Flowers
-            Console.WriteLine(CanPlaceFlower(new[] { 1, 0, 0, 0, 1, 0, 0 }, 2));
+            //Console.WriteLine(CanPlaceFlower(new[] { 1, 0, 0, 0, 1, 0, 0 }, 2));
+
+            //414. Third Maximum Number
+            Console.WriteLine(ThirdMax(new[] { 2, 2, 3, 1 }));
         }
         //9. Palindrome Number
         public static bool IsPalindrome(int x)
@@ -322,6 +325,19 @@ namespace Easy
             }
 
             return false;
+        }
+
+        //414. Third Maximum Number
+        public static int ThirdMax(int[] nums)
+        {
+            var sortedUnique = nums.OrderByDescending(x => x)
+                .Distinct()
+                .ToArray();
+            if (sortedUnique.Length < 3)
+            {
+                return sortedUnique.First();
+            }
+            return sortedUnique.Skip(2).First();
         }
     }
 }
