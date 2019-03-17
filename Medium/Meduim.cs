@@ -15,7 +15,14 @@ namespace Medium
             //Console.WriteLine(FindMin(new[] { 3,2,1 }));
 
             //187.Repeated DNA Sequences
-            Console.Write(string.Join(", ", FindRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")));
+            //Console.Write(string.Join(", ", FindRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")));
+
+            //365. Water and Jug Problem
+            //Console.WriteLine(CanMeasureWater(3, 5, 4));
+
+            //322. Coin Change
+            int amount = 11;
+            Console.WriteLine(CoinChange(new[] { 1, 2, 5 }, amount, new int[amount]));
         }
 
         //165.Compare Version Numbers
@@ -158,6 +165,132 @@ namespace Medium
 
             return res.ToList();
         }
-       
+
+        //365. Water and Jug Problem
+        public static bool CanMeasureWater(int x, int y, int z)
+        {
+            // corner cases
+            if (x < 0 && y < 0)
+            {
+                return false;
+            }
+
+            if (z > (x + y))
+            {
+                return false;
+            }
+
+            if (x == z || y == z || x + y == z || z == 0)
+            {
+                return true;
+            }
+
+            // initialize conditions. We fill the bigger bucket full first and leave smaller one empty
+            int bigger = Math.Max(x, y);
+            int smaller = Math.Min(x, y);
+
+            int biggerBucket = bigger;
+            int smallerBucket = 0;
+
+            // when smaller bucket is full we have tried every sum combinations
+            while (smallerBucket != smaller)
+            {
+                int gap = smaller - smallerBucket;
+                int leftOver = biggerBucket - gap;
+
+                if (leftOver == z || leftOver + smaller == z)
+                {
+                    return true;
+                }
+
+                if (leftOver <= smaller)
+                {
+                    if (leftOver + bigger == z)
+                    {
+                        return true;
+                    }
+
+                    smallerBucket = leftOver;
+                    biggerBucket = bigger;
+                }
+                else
+                {
+                    smallerBucket = 0;
+                    biggerBucket = leftOver;
+                }
+            }
+
+            return false;
+        }
+
+        //322. Coin Change
+
+        //Too slow
+        //class Amount
+        //{
+        //    public int CoinsCount { get; set; } 
+        //    public int CurrentSum { get; set; }
+        //}
+        //public static int CoinChange(int[] coins, int amount)
+        //{
+        //    if (coins.Contains(amount))
+        //    {
+        //        return 1;
+        //    }
+        //    else if (amount == 0)
+        //    {
+        //        return 0;
+        //    }
+        //    var orderedCoins = coins.OrderByDescending(x => x).ToArray();
+        //    var amounts = new Queue<Amount>();
+        //    foreach (var coin in orderedCoins)
+        //    {
+        //        amounts.Enqueue(new Amount() { CurrentSum = coin, CoinsCount = 1 });
+        //    }
+
+        //    while (amounts.Count>0)
+        //    {
+        //        var current = amounts.Dequeue();
+
+        //        foreach (var coin in orderedCoins)
+        //        {
+        //            if (current.CurrentSum + coin == amount)
+        //            {
+        //                return current.CoinsCount + 1;
+        //            }
+        //            else if (current.CurrentSum+coin<amount)
+        //            {
+        //                amounts.Enqueue(new Amount()
+        //                {
+        //                    CurrentSum = current.CurrentSum + coin,
+        //                    CoinsCount = current.CoinsCount + 1
+        //                });
+        //            }
+        //        }
+        //    }
+
+        //    return -1;
+
+        //}
+
+        private static int CoinChange(int[] coins, int rem, int[] count)
+        {
+            if (rem < 0)
+                return -1;
+            if (rem == 0)
+                return 0;
+            if (count[rem - 1] != 0)
+                return count[rem - 1];
+            int min = int.MaxValue;
+            foreach (var coin in coins)
+            {
+                int res = CoinChange(coins, rem - coin, count);
+                if (res >= 0 && res < min)
+                    min = 1 + res;
+            }
+            count[rem - 1] = (min == int.MaxValue) ? -1 : min;
+
+            return count[rem - 1];
+        }
     }
 }
