@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayAllDigitsIterative", "DisplayAllDigitsIterative\DisplayAllDigitsIterative.csproj", "{6C764020-228F-4ADB-B994-15AA83A9D645}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayAllDigitsIterative", "DisplayAllDigitsIterative\DisplayAllDigitsIterative.csproj", "{6C764020-228F-4ADB-B994-15AA83A9D645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayAllDigitsRecursiveParams", "DisplayAllDigitsRecursiveParams\DisplayAllDigitsRecursiveParams.csproj", "{6D2B38E0-E29A-4228-9720-D2E0937F4B8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayAllDigitsRecursiveParams", "DisplayAllDigitsRecursiveParams\DisplayAllDigitsRecursiveParams.csproj", "{6D2B38E0-E29A-4228-9720-D2E0937F4B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayAllDigitsRecursiveNoParams", "DisplayAllDigitsRecursiveNoParams\DisplayAllDigitsRecursiveNoParams.csproj", "{9B4878D4-9BE6-4B4A-9A22-4B4AA622792F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayAllDigitsRecursiveNoParams", "DisplayAllDigitsRecursiveNoParams\DisplayAllDigitsRecursiveNoParams.csproj", "{9B4878D4-9BE6-4B4A-9A22-4B4AA622792F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursion", "Recursion", "{F684A50E-90D9-4345-9EB7-CB5A13FACCD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintLineWithParameters", "RecursivePrintLineWithParameters\RecursivePrintLineWithParameters.csproj", "{A947228C-D70C-4E23-A874-9A8BF7B997A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintLineGlobalCounter", "RecursivePrintLineGlobalCounter\RecursivePrintLineGlobalCounter.csproj", "{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintLineNoParams", "RecursivePrintLineNoParams\RecursivePrintLineNoParams.csproj", "{23D714E2-B661-4D76-AC7E-CFE0D133955B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,29 @@ Global
 		{9B4878D4-9BE6-4B4A-9A22-4B4AA622792F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B4878D4-9BE6-4B4A-9A22-4B4AA622792F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B4878D4-9BE6-4B4A-9A22-4B4AA622792F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A947228C-D70C-4E23-A874-9A8BF7B997A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A947228C-D70C-4E23-A874-9A8BF7B997A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A947228C-D70C-4E23-A874-9A8BF7B997A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A947228C-D70C-4E23-A874-9A8BF7B997A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C764020-228F-4ADB-B994-15AA83A9D645} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
+		{6D2B38E0-E29A-4228-9720-D2E0937F4B8B} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
+		{9B4878D4-9BE6-4B4A-9A22-4B4AA622792F} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
+		{A947228C-D70C-4E23-A874-9A8BF7B997A0} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
+		{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
+		{23D714E2-B661-4D76-AC7E-CFE0D133955B} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB3A78FE-3BCE-48AD-8548-656861931883}
