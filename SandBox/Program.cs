@@ -62,9 +62,12 @@ namespace SandBox
 
         private static int CoinChange(int[] coins, int rem, int[] count)
         {
-            if (rem < 0) return -1;
-            if (rem == 0) return 0;
-            if (count[rem - 1] != 0) return count[rem - 1];
+            if (rem < 0)
+                return -1;
+            if (rem == 0)
+                return 0;
+            if (count[rem - 1] != 0)
+                return count[rem - 1];
             int min = int.MaxValue;
             foreach (var coin in coins)
             {
