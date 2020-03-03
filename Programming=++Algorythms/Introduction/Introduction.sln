@@ -11,11 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayAllDigitsRecursiveNo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursion", "Recursion", "{F684A50E-90D9-4345-9EB7-CB5A13FACCD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintLineWithParameters", "RecursivePrintLineWithParameters\RecursivePrintLineWithParameters.csproj", "{A947228C-D70C-4E23-A874-9A8BF7B997A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursivePrintLineWithParameters", "RecursivePrintLineWithParameters\RecursivePrintLineWithParameters.csproj", "{A947228C-D70C-4E23-A874-9A8BF7B997A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintLineGlobalCounter", "RecursivePrintLineGlobalCounter\RecursivePrintLineGlobalCounter.csproj", "{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursivePrintLineGlobalCounter", "RecursivePrintLineGlobalCounter\RecursivePrintLineGlobalCounter.csproj", "{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintLineNoParams", "RecursivePrintLineNoParams\RecursivePrintLineNoParams.csproj", "{23D714E2-B661-4D76-AC7E-CFE0D133955B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursivePrintLineNoParams", "RecursivePrintLineNoParams\RecursivePrintLineNoParams.csproj", "{23D714E2-B661-4D76-AC7E-CFE0D133955B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicCombibatoric", "BasicCombibatoric", "{28F0804A-AA8E-449D-8875-1D5E94796163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prmutations", "Prmutations\Prmutations.csproj", "{2783DD1F-1A9D-469D-87E9-72128D8AF5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermutationsWithSwapping", "PermutationsWithSwapping\PermutationsWithSwapping.csproj", "{1887FB39-49FB-4085-8856-0209C2D7C107}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +53,14 @@ Global
 		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23D714E2-B661-4D76-AC7E-CFE0D133955B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2783DD1F-1A9D-469D-87E9-72128D8AF5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2783DD1F-1A9D-469D-87E9-72128D8AF5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2783DD1F-1A9D-469D-87E9-72128D8AF5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2783DD1F-1A9D-469D-87E9-72128D8AF5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1887FB39-49FB-4085-8856-0209C2D7C107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1887FB39-49FB-4085-8856-0209C2D7C107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1887FB39-49FB-4085-8856-0209C2D7C107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1887FB39-49FB-4085-8856-0209C2D7C107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +72,8 @@ Global
 		{A947228C-D70C-4E23-A874-9A8BF7B997A0} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
 		{108BA6A1-2570-4D6C-85D9-274FD8B9E2DC} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
 		{23D714E2-B661-4D76-AC7E-CFE0D133955B} = {F684A50E-90D9-4345-9EB7-CB5A13FACCD2}
+		{2783DD1F-1A9D-469D-87E9-72128D8AF5B0} = {28F0804A-AA8E-449D-8875-1D5E94796163}
+		{1887FB39-49FB-4085-8856-0209C2D7C107} = {28F0804A-AA8E-449D-8875-1D5E94796163}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB3A78FE-3BCE-48AD-8548-656861931883}
