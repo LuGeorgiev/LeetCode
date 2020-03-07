@@ -38,15 +38,21 @@ namespace PermutationsWithSwapping
 
                 for (int k = 0; k < index -1; k++)
                 {
-                    int swap = vector[k];
-                    vector[k] = vector[index - 1];
-                    vector[index - 1] = swap;
+                    //int swap = vector[k];
+                    //vector[k] = vector[index - 1];
+                    //vector[index - 1] = swap;
+
+                    //tpuple value swap valid with C# 7 or 8
+                    ( vector[k], vector[index - 1] ) = ( vector[index - 1], vector[k] );
 
                     Permute(index - 1);
 
-                    swap = vector[k];
-                    vector[k] = vector[index - 1];
-                    vector[index - 1] = swap;
+                    ( vector[k], vector[index - 1] ) = ( vector[index - 1], vector[k] );
+
+
+                    //swap = vector[k];
+                    //vector[k] = vector[index - 1];
+                    //vector[index - 1] = swap;
                 }
             }           
         }
