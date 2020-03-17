@@ -28,8 +28,7 @@ namespace PermutationsWithDuplication
                 for (int i = index; i < vector.Length; i++)
                 {
                     if (! swapped.Contains(vector[i]))
-                    {
-                       
+                    {        
                         (vector[i], vector[index]) = (vector[index], vector[i]);
 
                         Permute(index + 1);
