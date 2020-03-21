@@ -9,7 +9,7 @@ namespace SumZero
 
         static void Main(string[] args)
         {
-            Variate(0);
+            Variate(0);           
         }
 
         private static void CheckSum()
