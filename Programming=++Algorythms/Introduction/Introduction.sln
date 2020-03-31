@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursivePrintLineGlobalCou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursivePrintLineNoParams", "RecursivePrintLineNoParams\RecursivePrintLineNoParams.csproj", "{23D714E2-B661-4D76-AC7E-CFE0D133955B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicCombibatoric", "BasicCombibatoric", "{28F0804A-AA8E-449D-8875-1D5E94796163}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicCombinatoric", "BasicCombinatoric", "{28F0804A-AA8E-449D-8875-1D5E94796163}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prmutations", "Prmutations\Prmutations.csproj", "{2783DD1F-1A9D-469D-87E9-72128D8AF5B0}"
 EndProject
@@ -25,17 +25,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PermutationsWithSwapping", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PermutationsWithDuplication", "PermutationsWithDuplication\PermutationsWithDuplication.csproj", "{248B9F52-C6DD-4AA3-BE23-872A79BBCEDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariationsWithRepetitions", "VariationsWithRepetitions\VariationsWithRepetitions.csproj", "{98AE2CD0-E241-4F1C-8334-9E092A5A2A30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariationsWithRepetitions", "VariationsWithRepetitions\VariationsWithRepetitions.csproj", "{98AE2CD0-E241-4F1C-8334-9E092A5A2A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumZero", "SumZero\SumZero.csproj", "{D1B08F00-B5FE-4315-A8D3-F8BA385CEF2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumZero", "SumZero\SumZero.csproj", "{D1B08F00-B5FE-4315-A8D3-F8BA385CEF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{DE3CF405-A896-4682-87C1-ED2FF01485D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox", "SandBox\SandBox.csproj", "{DE3CF405-A896-4682-87C1-ED2FF01485D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationsNoRepetition", "CombinationsNoRepetition\CombinationsNoRepetition.csproj", "{FE4D6819-6C76-42D7-AF1D-EB94950328D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CombinationsNoRepetition", "CombinationsNoRepetition\CombinationsNoRepetition.csproj", "{FE4D6819-6C76-42D7-AF1D-EB94950328D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationsWithRepetition", "CombinationsWithRepetition\CombinationsWithRepetition.csproj", "{E2E8A76B-A6EF-4C98-8A61-81C4E33D3443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CombinationsWithRepetition", "CombinationsWithRepetition\CombinationsWithRepetition.csproj", "{E2E8A76B-A6EF-4C98-8A61-81C4E33D3443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCombinations", "StringCombinations\StringCombinations.csproj", "{5DFFAC38-45FC-4062-9823-2D73B555F8D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringCombinations", "StringCombinations\StringCombinations.csproj", "{5DFFAC38-45FC-4062-9823-2D73B555F8D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Numbers", "Numbers", "{74C24E47-D65E-4557-81C2-0D8A08EEB265}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberComposition", "NumberComposition\NumberComposition.csproj", "{E2BF2512-70D5-4CE1-9FE7-210A186A1139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbeSumFromGivenNumbers", "NumbeSumFromGivenNumbers\NumbeSumFromGivenNumbers.csproj", "{86E83DC5-FCD8-416B-8F61-ECD1F3CE1ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BelNumberWithSterling", "BelNumberWithSterling\BelNumberWithSterling.csproj", "{A10D485B-CB82-4749-8C4C-BBBFD15AD8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrirlingTriangle", "StrirlingTriangle\StrirlingTriangle.csproj", "{3697E7F3-F1B7-41F9-8A4D-3DB96817878F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StirlingNumberRecursive", "StirlingNumberRecursive\StirlingNumberRecursive.csproj", "{D5BEA1F5-2D37-4D02-A466-F08C4076BEA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +115,26 @@ Global
 		{5DFFAC38-45FC-4062-9823-2D73B555F8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DFFAC38-45FC-4062-9823-2D73B555F8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DFFAC38-45FC-4062-9823-2D73B555F8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BF2512-70D5-4CE1-9FE7-210A186A1139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BF2512-70D5-4CE1-9FE7-210A186A1139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BF2512-70D5-4CE1-9FE7-210A186A1139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BF2512-70D5-4CE1-9FE7-210A186A1139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E83DC5-FCD8-416B-8F61-ECD1F3CE1ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E83DC5-FCD8-416B-8F61-ECD1F3CE1ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E83DC5-FCD8-416B-8F61-ECD1F3CE1ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E83DC5-FCD8-416B-8F61-ECD1F3CE1ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10D485B-CB82-4749-8C4C-BBBFD15AD8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10D485B-CB82-4749-8C4C-BBBFD15AD8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10D485B-CB82-4749-8C4C-BBBFD15AD8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10D485B-CB82-4749-8C4C-BBBFD15AD8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3697E7F3-F1B7-41F9-8A4D-3DB96817878F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3697E7F3-F1B7-41F9-8A4D-3DB96817878F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3697E7F3-F1B7-41F9-8A4D-3DB96817878F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3697E7F3-F1B7-41F9-8A4D-3DB96817878F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BEA1F5-2D37-4D02-A466-F08C4076BEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BEA1F5-2D37-4D02-A466-F08C4076BEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BEA1F5-2D37-4D02-A466-F08C4076BEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BEA1F5-2D37-4D02-A466-F08C4076BEA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +154,11 @@ Global
 		{FE4D6819-6C76-42D7-AF1D-EB94950328D5} = {28F0804A-AA8E-449D-8875-1D5E94796163}
 		{E2E8A76B-A6EF-4C98-8A61-81C4E33D3443} = {28F0804A-AA8E-449D-8875-1D5E94796163}
 		{5DFFAC38-45FC-4062-9823-2D73B555F8D6} = {28F0804A-AA8E-449D-8875-1D5E94796163}
+		{E2BF2512-70D5-4CE1-9FE7-210A186A1139} = {74C24E47-D65E-4557-81C2-0D8A08EEB265}
+		{86E83DC5-FCD8-416B-8F61-ECD1F3CE1ABF} = {74C24E47-D65E-4557-81C2-0D8A08EEB265}
+		{A10D485B-CB82-4749-8C4C-BBBFD15AD8D4} = {74C24E47-D65E-4557-81C2-0D8A08EEB265}
+		{3697E7F3-F1B7-41F9-8A4D-3DB96817878F} = {74C24E47-D65E-4557-81C2-0D8A08EEB265}
+		{D5BEA1F5-2D37-4D02-A466-F08C4076BEA7} = {74C24E47-D65E-4557-81C2-0D8A08EEB265}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB3A78FE-3BCE-48AD-8548-656861931883}
