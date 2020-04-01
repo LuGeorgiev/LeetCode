@@ -10,7 +10,7 @@ namespace PrimeTwinNumbers._1._158
         private static List<ulong> primeNumbers = new List<ulong>() { 2, 3, 5 };
         private static List<string> twinCouples = new List<string>() { "{3,5}" };
 
-        private static double branConstant = 1 / 3D + 1 / 5D;
+        private static decimal branConstant = 1 / 3M + 1 / 5M;
 
         static void Main(string[] args)
         {
@@ -26,8 +26,9 @@ namespace PrimeTwinNumbers._1._158
 
             ulong numberToCheck = 6;
 
-            while (twinCouples.Count <= numberOfCouplesToFind)
-            {
+            while ( twinCouples.Count <= numberOfCouplesToFind)
+            {              
+
                 bool isPrime = IsPrime(numberToCheck);
                 if (isPrime && HasTwin(numberToCheck))
                 {
@@ -44,8 +45,8 @@ namespace PrimeTwinNumbers._1._158
 
         private static void UpdateBranConstant(ulong numberToCheck)
         {
-            branConstant += 1 / (double)(numberToCheck - 2);
-            branConstant += 1 / (double)(numberToCheck);
+            branConstant += 1 / (decimal)(numberToCheck - 2);
+            branConstant += 1 / (decimal)(numberToCheck);
         }
 
         private static bool HasTwin(ulong numberToCheck)

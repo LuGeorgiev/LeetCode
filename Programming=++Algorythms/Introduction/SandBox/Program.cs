@@ -7,11 +7,10 @@ namespace SandBox
     class Program
     {
         static void Main(string[] args)
-        {          
+        {
+            List<int> numbers = Enumerable.Range(1, 1000).ToList();
+            List<bool> isIncluded = Enumerable.Repeat(true, 100).ToList();
 
-            var parameters = new object[] {"Ivan", 89.569, 2 };
-
-            var indexed = parameters.Select((x, i) => new Element() { Index = i + 1, Value = x }).ToArray();
 
         }
     }
