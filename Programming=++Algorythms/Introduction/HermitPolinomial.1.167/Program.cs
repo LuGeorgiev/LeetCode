@@ -17,6 +17,7 @@ namespace HermitPolinomial._1._167
         static void Main(string[] args)
         {
             var hermitValu = CalculateHermitValue(ORDER);
+            Console.WriteLine($"The value of Hermits polinomial for value: {X_VALUE} of order: {ORDER} is: {hermitValu}");
         }
 
         private static BigInteger CalculateHermitValue(int order)
