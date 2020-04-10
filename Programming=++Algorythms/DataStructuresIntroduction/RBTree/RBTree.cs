@@ -10,64 +10,14 @@ namespace RBTreeImplementation
     {
         private Node<T> root;
 
-        private void LeftRotate(Node<T> x)
+        private int elementsCount;
+        public RBTree()
         {
-            var y = x.Right;
-            x.Right = y.Left;// turn Y's left subtree into X's right subtree
-
-            if (y.Left != null)
-            {
-                y.Left.Parent = x;
-            }
-
-            y.Parent = x.Parent;//link X's parent to Y
-
-            if (x.Parent == null)
-            {
-                this.root = y;
-            }
-            else if (x == x.Parent.Left)
-            {
-                x.Parent.Left = y;
-            }
-            else
-            {
-                x.Parent.Right = y;
-            }
-
-            y.Left = x;//put X on Y's left
-            x.Parent = y;
+            this.elementsCount = 0;
+            this.root = null;
         }
 
-        private void RightRotate(Node<T> y)
-        {
-            // right rotate is simply mirror code from left rotate
-            var x = y.Left;
-            y.Left = x.Right;
-
-            if (x.Right != null)
-            {
-                x.Right.Parent = y;
-            }
-
-            x.Parent = y.Parent;
-
-            if (y.Parent == null)
-            {
-                this.root = x;
-            }
-            else if (y == y.Parent.Right)
-            {
-                y.Parent.Right = x;
-            }
-            else
-            {
-                y.Parent.Left = x;
-            }
-
-            x.Right = y;//put Y on X's right
-            y.Parent = x;
-        }
+        public int Count => this.elementsCount;
 
         public void DisplayTree()
         {
@@ -118,7 +68,7 @@ namespace RBTreeImplementation
             while (x != null)
             {
                 y = x;
-                if (newNode.Value.CompareTo(x.Value) < 0)
+                if (newNode.Value.CompareTo(x.Value) <= 0)
                 {
                     x = x.Left;
                 }
@@ -127,13 +77,13 @@ namespace RBTreeImplementation
                     x = x.Right;
                 }
             }
-            newNode.Parent = y;
+            newNode.Parent = y; //TODO check
 
             if (y == null)
             {
                 this.root = newNode;
             }
-            else if (newNode.Value.CompareTo(y.Value) < 0)
+            else if (newNode.Value.CompareTo(y.Value) <= 0)
             {
                 y.Left = newNode;
             }
@@ -148,46 +98,47 @@ namespace RBTreeImplementation
         public void Delete(T key)
         {
             var toDelete = this.Find(key);
+           
             this.Delete(toDelete);
         }
 
-        private void Delete(Node<T> toDelete)
+        private void Delete(Node<T> z)
         {
             Node<T> x = null;
-            Node<T> y = toDelete;
+            Node<T> y = z;
             Color yOriginalColor = y.Color;
 
-            if (toDelete.Left == null)
+            if (z.Left == null)
             {
-                x = toDelete.Right;
-                this.Transplant(toDelete, toDelete.Right);
+                x = z.Right;
+                this.Transplant(z, z.Right);
             }
-            else if (toDelete.Right == null)
+            else if (z.Right == null)
             {
-                x = toDelete.Left;
-                this.Transplant(toDelete, toDelete.Left);
+                x = z.Left;
+                this.Transplant(z, z.Left);
             }
             else
             {
-                y = this.Minimum(toDelete.Right);
+                y = this.Minimum(z.Right);
                 yOriginalColor = y.Color;
                 x = y.Right;
 
-                if (y.Parent == toDelete)
+                if (y.Parent == z)
                 {
                     x.Parent = y;
                 }
                 else
                 {
                     this.Transplant(y, y.Right);
-                    y.Right = toDelete.Right;
+                    y.Right = z.Right;
                     y.Right.Parent = y;
                 }
 
-                this.Transplant(toDelete, y);
-                y.Left = toDelete.Left;
+                this.Transplant(z, y);
+                y.Left = z.Left;
                 y.Left.Parent = y;
-                y.Color = toDelete.Color;
+                y.Color = z.Color;
             }
 
             if (yOriginalColor == Color.Black)
@@ -212,6 +163,12 @@ namespace RBTreeImplementation
             }
 
             v.Parent = u.Parent;
+        }
+
+
+        private Node<T> DeleteNode(Node<T> root, T item, object p)
+        {
+            throw new NotImplementedException();
         }
 
         private void InOrderDisplay(Node<T> currentNode)
@@ -370,7 +327,67 @@ namespace RBTreeImplementation
             }
 
             return x;
-        }        
+        }
+
+
+        private void LeftRotate(Node<T> x)
+        {
+            var y = x.Right;
+            x.Right = y.Left;// turn Y's left subtree into X's right subtree
+
+            if (y.Left != null)
+            {
+                y.Left.Parent = x;
+            }
+
+            y.Parent = x.Parent;//link X's parent to Y
+
+            if (x.Parent == null)
+            {
+                this.root = y;
+            }
+            else if (x == x.Parent.Left)
+            {
+                x.Parent.Left = y;
+            }
+            else
+            {
+                x.Parent.Right = y;
+            }
+
+            y.Left = x;//put X on Y's left
+            x.Parent = y;
+        }
+
+        private void RightRotate(Node<T> y)
+        {
+            // right rotate is simply mirror code from left rotate
+            var x = y.Left;
+            y.Left = x.Right;
+
+            if (x.Right != null)
+            {
+                x.Right.Parent = y;
+            }
+
+            x.Parent = y.Parent;
+
+            if (y.Parent == null)
+            {
+                this.root = x;
+            }
+            else if (y == y.Parent.Right)
+            {
+                y.Parent.Right = x;
+            }
+            else
+            {
+                y.Parent.Left = x;
+            }
+
+            x.Right = y;//put Y on X's right
+            y.Parent = x;
+        }
 
 
         public class Node<V>
@@ -382,7 +399,18 @@ namespace RBTreeImplementation
                 this.Color = Color.Red;
                 this.Left = null;
                 this.Right = null;
+                this.Parent = null;
             }
+
+            public Node(V value, Node<V> parent)
+            {
+                this.Value = value;
+                this.Parent = parent;
+                this.Left = null;
+                this.Right = null;
+            }
+
+            public Node() { }
 
             public Color Color { get; set; }
 
