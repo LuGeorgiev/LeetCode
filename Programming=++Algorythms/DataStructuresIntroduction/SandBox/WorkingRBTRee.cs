@@ -4,7 +4,7 @@ namespace SandBox
 {
     //Reference
     //http://www.rkinteractive.com/blogs/SoftwareDevelopment/post/2012/12/16/Algorithms-In-C-Red-Black-Trees.aspx
-    class Program
+    class WorkingRBTRee
     {
         static void Main(string[] args)
         {
