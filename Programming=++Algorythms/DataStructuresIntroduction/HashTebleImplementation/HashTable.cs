@@ -21,13 +21,19 @@ namespace HashTebleImplementation
             this.Count = 0;
             this.capacityIndex = 0;
             this.hashBase = this.capacity[this.capacityIndex];
-            this.hashTable = new SingleLinkList<TKey, TValue>[hashBase];
-            for (int i = 0; i < this.hashTable.Length; i++)
-            {
-                this.hashTable[i] = new SingleLinkList<TKey, TValue>();
-            }
+            this. hashTable = InitializeHashTable(this.hashBase);
         }
 
+        private SingleLinkList<TKey, TValue>[] InitializeHashTable(int capacity)
+        {
+            var newHashTable = new SingleLinkList<TKey, TValue>[capacity];
+            for (int i = 0; i < newHashTable.Length; i++)
+            {
+                newHashTable[i] = new SingleLinkList<TKey, TValue>();
+            }
+
+            return newHashTable;
+        }
 
         public int Count { get; private set; }
 
@@ -40,11 +46,9 @@ namespace HashTebleImplementation
         public TValue GetValue(TKey key)
             => this.GetCorrespondingList(key)[key];
 
-
         public bool ConatainsKey(TKey key)
             => this.GetCorrespondingList(key)
                      .HasKey(key);
-
 
         public void Add(TKey key, TValue value)
         {
@@ -55,12 +59,42 @@ namespace HashTebleImplementation
             {
                 linkList.AddFirst(new Node<TKey, TValue>() { Key = key, Value = value });
                 this.Count++;
+                if (Count / (float)this.hashTable.Length  >= saturation)
+                {
+                    EnlargeCapacity();
+                }
 
                 return;
             }
 
             var node = linkList.Find(key);
             node.Value = value;
+        }
+
+        private void EnlargeCapacity()
+        {
+            int newTableCapacity;
+            this.capacityIndex++;
+            if (this.capacityIndex > capacity.Length -1)
+            {
+                newTableCapacity = hashTable.Length << 1;
+            }
+            else
+            {
+                newTableCapacity = capacity[this.capacityIndex];
+            }
+
+            var oldHashTable = this.hashTable;
+            this.hashBase = newTableCapacity;
+            this.hashTable = InitializeHashTable(newTableCapacity);
+            foreach (var linkedList in oldHashTable)
+            {
+                foreach (var kvp in linkedList)
+                {
+                    var listToAddElement = GetCorrespondingList(kvp.Key);
+                    listToAddElement.AddFirst(new Node<TKey, TValue>() { Key = kvp.Key, Value = kvp.Value });
+                }
+            }
         }
 
         private SingleLinkList<TKey, TValue> GetCorrespondingList(TKey key)
