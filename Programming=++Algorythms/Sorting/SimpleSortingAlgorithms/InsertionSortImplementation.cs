@@ -2,7 +2,7 @@
 
 namespace SimpleSortingAlgorithms
 {
-    public static class InsertionSort
+    public static class InsertionSortImplementation
     {
         public static T[] InsertSrt<T>(this T[] array)
             where T : IComparable<T>
