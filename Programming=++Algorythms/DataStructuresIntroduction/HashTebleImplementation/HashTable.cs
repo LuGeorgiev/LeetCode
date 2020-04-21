@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace HashTebleImplementation
 {
     class HashTable<TKey, TValue> : IEnumerable<TKey>
-        where TKey : IEqualityComparer<TKey>
+        //where TKey : IEqualityComparer<TKey>
     {
         private const string NO_SUCH_KEY = "No such key!";
 
@@ -14,17 +14,17 @@ namespace HashTebleImplementation
 
         private int capacityIndex;
         private int hashBase;
-        private SingleLinkList[] hashTable;
+        private SingleLinkList<TKey, TValue>[] hashTable;
 
         public HashTable()
         {
             this.Count = 0;
             this.capacityIndex = 0;
             this.hashBase = this.capacity[this.capacityIndex];
-            this.hashTable = new SingleLinkList[hashBase];
+            this.hashTable = new SingleLinkList<TKey, TValue>[hashBase];
             for (int i = 0; i < this.hashTable.Length; i++)
             {
-                this.hashTable[i] = new SingleLinkList();
+                this.hashTable[i] = new SingleLinkList<TKey, TValue>();
             }
         }
 
@@ -53,7 +53,7 @@ namespace HashTebleImplementation
 
             if (! keyAlreadyExist)
             {
-                linkList.AddFirst(new Node() { Key = key, Value = value });
+                linkList.AddFirst(new Node<TKey, TValue>() { Key = key, Value = value });
                 this.Count++;
 
                 return;
@@ -63,7 +63,7 @@ namespace HashTebleImplementation
             node.Value = value;
         }
 
-        private SingleLinkList GetCorrespondingList(TKey key)
+        private SingleLinkList<TKey, TValue> GetCorrespondingList(TKey key)
         {
             int hashValue = key.GetHashCode();
             int index = hashValue % this.hashBase;
@@ -76,6 +76,7 @@ namespace HashTebleImplementation
         {
             var linkedList = this.GetCorrespondingList(key);
             var exists = linkedList.HasKey(key);
+
             if (exists)
             {
                 linkedList.Delete(key);
@@ -85,28 +86,32 @@ namespace HashTebleImplementation
             return false;
         }
 
-
-        IEnumerator<TKey> IEnumerable<TKey>.GetEnumerator()
+        public IEnumerator<TKey> GetEnumerator()
         {
-            throw new NotImplementedException();
+            foreach (var linkList in this.hashTable)
+            {
+                foreach (var node in linkList)
+                {
+                    yield return node.Key;
+                }
+            }
         }
 
-        public IEnumerator GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+        IEnumerator IEnumerable.GetEnumerator()
+            => this.GetEnumerator();
 
-        internal class SingleLinkList
+
+        internal class SingleLinkList<Tk, Tv> :IEnumerable<Node<Tk,Tv>>
         {
             
-            private Node root;
+            private Node<Tk, Tv> root;
 
             public SingleLinkList()
             {
                 this.root = null;
             }
 
-            public void AddFirst(Node element)
+            public void AddFirst(Node<Tk, Tv> element)
             {
                 if (this.root == null)
                 {
@@ -152,8 +157,8 @@ namespace HashTebleImplementation
                     return false;
                 }
 
-                Node previousNode = null;
-                Node currentNode = this.root;
+                Node<Tk, Tv> previousNode = null;
+                var currentNode = this.root;
 
                 while (currentNode != null)
                 {
@@ -178,7 +183,7 @@ namespace HashTebleImplementation
                 return false;
             }
 
-            public Node Find(TKey key)
+            public Node<Tk, Tv> Find(Tk key)
             {
                 if (key == null)
                 {
@@ -204,17 +209,30 @@ namespace HashTebleImplementation
                 throw new ArgumentException(NO_SUCH_KEY);
             }
 
-            public TValue this[TKey key]
+            public IEnumerator<Node<Tk,Tv>> GetEnumerator()
+            {
+                var node = this.root;
+                while (node != null)
+                {
+                    yield return node;
+                    node = node.Next;
+                }
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+                => this.GetEnumerator();
+
+            public Tv this[Tk key]
                 => this.Find(key).Value;
         }
 
-        internal class Node
+        internal class Node<K,V>
         {
-            public TKey Key { get; set; }
+            public K Key { get; set; }
 
-            public TValue Value { get; set; }
+            public V Value { get; set; }
 
-            public Node Next { get; set; }
+            public Node<K,V> Next { get; set; }
         }
     }
 }
