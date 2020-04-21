@@ -19,7 +19,7 @@ namespace SimpleSortingAlgorithms
 
             //Console.WriteLine(string.Join(" <= ", myArr.BubbleSort()));
 
-            Console.WriteLine(string.Join(" <= ", myArr.BubbleSortEnhanced()));
+            Console.WriteLine(string.Join(" <= ", myArr.BubbleSortFlagged()));
 
 
         }

@@ -21,11 +21,11 @@ namespace SimpleSortingAlgorithms
             return array;
         }
 
-        public static T[] BubbleSortEnhanced<T>(this T[] array)
+        public static T[] BubbleSortFlagged<T>(this T[] array)
            where T : IComparable<T>
         {
             int lastSwappedIndex = 0;
-            for (int i = array.Length - 1; i > -1; i = lastSwappedIndex)
+            for (int i = array.Length - 1; i > 0; i = lastSwappedIndex)
             { 
                 for (int j = lastSwappedIndex = 0; j < i; j++)
                 {
@@ -39,6 +39,5 @@ namespace SimpleSortingAlgorithms
 
             return array;
         }
-
     }
 }
