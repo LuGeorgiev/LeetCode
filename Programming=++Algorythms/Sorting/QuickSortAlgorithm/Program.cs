@@ -15,8 +15,9 @@ namespace QuickSortAlgorithm
             //Console.WriteLine(string.Join(" <= ", result));
 
             var rand = new Random();
-            var listToSort = new List<int>(1_000_000);
-            for (int i = 0; i < 100_000; i++)
+            var elemnts = 1_000_000;
+            var listToSort = new List<int>(elemnts);
+            for (int i = 0; i < elemnts; i++)
             {
                 listToSort.Add(rand.Next(int.MinValue, int.MaxValue));
             }

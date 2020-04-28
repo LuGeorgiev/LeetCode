@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace SimpleSortingAlgorithms
@@ -21,7 +22,31 @@ namespace SimpleSortingAlgorithms
 
             //Console.WriteLine(string.Join(" <= ", myArr.BubbleSortFlagged()));
 
-            Console.WriteLine(string.Join(" <= ", myArr.ShakeSort()));
+            //Console.WriteLine(string.Join(" <= ", myArr.ShakeSort()));
+
+            var rand = new Random();
+            var elementsCount = 10_000;
+            var listToSort = new List<int>(elementsCount);
+            for (int i = 0; i < elementsCount; i++)
+            {
+                listToSort.Add(rand.Next(int.MinValue, int.MaxValue));
+            }
+
+            var stopWatch = Stopwatch.StartNew();
+
+            var sorted = listToSort.ToArray().InsertSrt();
+            //var sorted = listToSort.ToArray().ShellSort(listToSort.Count -1);
+            
+            stopWatch.Stop();
+            Console.WriteLine($"List was Sorted for: {stopWatch.ElapsedMilliseconds} msec");            
+
+            for (int i = 1; i < sorted.Length; i++)
+            {
+                if (sorted[i - 1] > sorted[i])
+                {
+                    Console.WriteLine($"Wrong: {sorted[i - 1]} is not lower {sorted[i]} on index: {i} OR not sorted corectly");
+                }
+            }
 
         }
     }
