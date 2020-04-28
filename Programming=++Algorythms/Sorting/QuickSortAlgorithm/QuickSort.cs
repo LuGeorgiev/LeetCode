@@ -17,8 +17,7 @@ namespace QuickSortAlgorithm
             var lowerList = new List<T>();
             var higherList = new List<T>();
 
-            var rand = new Random();
-            var indexToCompare = rand.Next(listToSort.Count);
+            var indexToCompare = listToSort.Count / 2;
             var valueToCompare = listToSort[indexToCompare];
 
             for (int i = 0; i < indexToCompare; i++)
@@ -48,8 +47,8 @@ namespace QuickSortAlgorithm
             return Concat(Sort(lowerList), valueToCompare, Sort(higherList));
         }
 
-        //This Quick sort implementation is around 8 times faster
-        public static List<T> SortSwap<T>(List<T> listToSort)
+        //This Quick sort implementation is around 3 times faster
+        public static List<T> QuickerSort<T>(List<T> listToSort)
             where T : IComparable<T>
         {
             SortQuickly(listToSort, 0, listToSort.Count - 1);
@@ -77,7 +76,9 @@ namespace QuickSortAlgorithm
 
                 if (start <= end)
                 {
+                    //swap both elements
                     (listToSort[start], listToSort[end]) = (listToSort[end], listToSort[start]);
+
                     start++;
                     end--;
                 }

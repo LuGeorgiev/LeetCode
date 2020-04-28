@@ -11,11 +11,11 @@ namespace QuickSortAlgorithm
         {
             //var list = new List<int>() { 89, 3, 4, 57, 2, 31, -62, 23, 2, 34, 45, 89, 986, -67, -23 };
             //var result = Sort<int>(list);
-            //var result = SortSwap<int>(list);
+            //var result = QuickerSort<int>(list);
             //Console.WriteLine(string.Join(" <= ", result));
 
             var rand = new Random();
-            var listToSort = new List<int>(100_000);
+            var listToSort = new List<int>(1_000_000);
             for (int i = 0; i < 100_000; i++)
             {
                 listToSort.Add(rand.Next(int.MinValue, int.MaxValue));
@@ -28,7 +28,7 @@ namespace QuickSortAlgorithm
 
             stopWatch.Reset();
             stopWatch.Start();
-            var sortedWithSwap = SortSwap<int>(listToSort);
+            var sortedWithSwap = QuickerSort<int>(listToSort);
             stopWatch.Stop();
             Console.WriteLine($"List was Sorted wit swapping for: {stopWatch.ElapsedMilliseconds} msec");
 
