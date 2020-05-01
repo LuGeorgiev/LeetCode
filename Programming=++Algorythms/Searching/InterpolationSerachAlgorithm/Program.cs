@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Linq;
 
 namespace InterpolationSerachAlgorithm
 {
@@ -6,7 +8,13 @@ namespace InterpolationSerachAlgorithm
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var list = Enumerable.Range(0, 1_000_000_000).ToArray();
+
+            var stopWatch = Stopwatch.StartNew();
+            Console.WriteLine(list.Search(9));
+            stopWatch.Stop();
+
+            Console.WriteLine(stopWatch.ElapsedMilliseconds);
         }
     }
 }
