@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreathFirstSearch", "Breath
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthFirstSearch", "DepthFirstSearch\DepthFirstSearch.csproj", "{DE2B308D-F36B-4397-A3F4-6A2346EEDF04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPathBfs", "ShortestPathBfs\ShortestPathBfs.csproj", "{DA58778F-E626-48D0-8DF2-0C9DF2AFDF33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckForCycles", "CheckForCycles\CheckForCycles.csproj", "{16DBEF6E-CF5F-4452-AE2C-137562CE0D2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{DE2B308D-F36B-4397-A3F4-6A2346EEDF04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE2B308D-F36B-4397-A3F4-6A2346EEDF04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE2B308D-F36B-4397-A3F4-6A2346EEDF04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA58778F-E626-48D0-8DF2-0C9DF2AFDF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA58778F-E626-48D0-8DF2-0C9DF2AFDF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA58778F-E626-48D0-8DF2-0C9DF2AFDF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA58778F-E626-48D0-8DF2-0C9DF2AFDF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DBEF6E-CF5F-4452-AE2C-137562CE0D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DBEF6E-CF5F-4452-AE2C-137562CE0D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DBEF6E-CF5F-4452-AE2C-137562CE0D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DBEF6E-CF5F-4452-AE2C-137562CE0D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
