@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckForCycles", "CheckForC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllSimplePaths", "FindAllPaths\FindAllSimplePaths.csproj", "{E5510F82-54B2-43C7-894A-B43E1657F1F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloydAlgorithm", "FloydAlgorithm\FloydAlgorithm.csproj", "{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E5510F82-54B2-43C7-894A-B43E1657F1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5510F82-54B2-43C7-894A-B43E1657F1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5510F82-54B2-43C7-894A-B43E1657F1F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
