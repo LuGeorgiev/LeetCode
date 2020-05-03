@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllSimplePaths", "FindA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloydAlgorithm", "FloydAlgorithm\FloydAlgorithm.csproj", "{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjiikstraAlgorithm", "DjiikstraAlgorithm\DjiikstraAlgorithm.csproj", "{4CE88AA0-FC42-450F-B77D-E1F82BECF606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriticalWayInGraph", "CriticalWayInGraph\CriticalWayInGraph.csproj", "{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8043CE2-9FE9-4022-ABD8-B6CC388F98B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE88AA0-FC42-450F-B77D-E1F82BECF606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE88AA0-FC42-450F-B77D-E1F82BECF606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE88AA0-FC42-450F-B77D-E1F82BECF606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE88AA0-FC42-450F-B77D-E1F82BECF606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
