@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjiikstraAlgorithm", "Djiik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriticalWayInGraph", "CriticalWayInGraph\CriticalWayInGraph.csproj", "{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllCycles", "FindAllCycles\FindAllCycles.csproj", "{1AC95BF9-3ACE-40B2-B0DD-6FDCA51040AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalHamiltonCycle", "MinimalHamiltonCycle\MinimalHamiltonCycle.csproj", "{04343814-E6DB-4320-91E3-3A97FF27405A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{801CBDD0-5033-4DE2-AFC0-B25FA50EAA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC95BF9-3ACE-40B2-B0DD-6FDCA51040AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC95BF9-3ACE-40B2-B0DD-6FDCA51040AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC95BF9-3ACE-40B2-B0DD-6FDCA51040AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC95BF9-3ACE-40B2-B0DD-6FDCA51040AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04343814-E6DB-4320-91E3-3A97FF27405A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04343814-E6DB-4320-91E3-3A97FF27405A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04343814-E6DB-4320-91E3-3A97FF27405A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04343814-E6DB-4320-91E3-3A97FF27405A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
