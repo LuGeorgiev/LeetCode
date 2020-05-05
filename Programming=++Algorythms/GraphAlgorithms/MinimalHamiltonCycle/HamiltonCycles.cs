@@ -29,7 +29,8 @@ namespace MinimalHamiltonCycle
 
         private static void PrintCycle()
         {
-            Console.WriteLine("Minimalian Hamiltonian cycle:");
+            Console.WriteLine($"Minimalian Hamiltonian cycle:");
+            Console.Write($"{staringVertex + 1} => ");
             for (int i = 0; i < VERTEX_COUNT -1; i++)
             {
                 Console.Write($"{minCycle[i] + 1} => ");
@@ -43,7 +44,8 @@ namespace MinimalHamiltonCycle
             {
                 if (level == VERTEX_COUNT)
                 {
-                    minCycle = currentCycle;
+                    minSum = currentSum;
+                    currentCycle.CopyTo(minCycle, 0);
                 }
 
                 return;

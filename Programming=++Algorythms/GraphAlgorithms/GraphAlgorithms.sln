@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllCycles", "FindAllCyc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalHamiltonCycle", "MinimalHamiltonCycle\MinimalHamiltonCycle.csproj", "{04343814-E6DB-4320-91E3-3A97FF27405A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerGraphAlgorithm", "EulerGraphAlgorithm\EulerGraphAlgorithm.csproj", "{53153CC8-D94A-4699-8AA2-A93B0F2961BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxFlowAlgorithm", "MaxFlow\MaxFlowAlgorithm.csproj", "{4A80FF7A-B542-4819-874C-3055A390AABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{04343814-E6DB-4320-91E3-3A97FF27405A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04343814-E6DB-4320-91E3-3A97FF27405A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04343814-E6DB-4320-91E3-3A97FF27405A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53153CC8-D94A-4699-8AA2-A93B0F2961BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53153CC8-D94A-4699-8AA2-A93B0F2961BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53153CC8-D94A-4699-8AA2-A93B0F2961BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53153CC8-D94A-4699-8AA2-A93B0F2961BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A80FF7A-B542-4819-874C-3055A390AABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A80FF7A-B542-4819-874C-3055A390AABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A80FF7A-B542-4819-874C-3055A390AABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A80FF7A-B542-4819-874C-3055A390AABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
