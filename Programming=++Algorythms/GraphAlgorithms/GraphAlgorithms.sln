@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxFlowAlgorithm", "MaxFlow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComanyControl", "ComanyControl\ComanyControl.csproj", "{D0360BFC-E2F9-4C3E-A10F-B87B65C8C610}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopologySortingAlgorithm", "TopologySortingAlgorithm\TopologySortingAlgorithm.csproj", "{B7B31E2C-9BFB-47FE-90F0-3B91E9C7FDA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{D0360BFC-E2F9-4C3E-A10F-B87B65C8C610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0360BFC-E2F9-4C3E-A10F-B87B65C8C610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0360BFC-E2F9-4C3E-A10F-B87B65C8C610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B31E2C-9BFB-47FE-90F0-3B91E9C7FDA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B31E2C-9BFB-47FE-90F0-3B91E9C7FDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B31E2C-9BFB-47FE-90F0-3B91E9C7FDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B31E2C-9BFB-47FE-90F0-3B91E9C7FDA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
