@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongConnectedComponents",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticulationPoints", "ArticulationPoints\ArticulationPoints.csproj", "{912725EC-24A4-40C5-BF8F-ADAE05131B88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KruskalAlgorithm", "KruskalAlgorithm\KruskalAlgorithm.csproj", "{FB9C51AA-3183-4414-9C39-FC6B9A98845F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{912725EC-24A4-40C5-BF8F-ADAE05131B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{912725EC-24A4-40C5-BF8F-ADAE05131B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{912725EC-24A4-40C5-BF8F-ADAE05131B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB9C51AA-3183-4414-9C39-FC6B9A98845F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB9C51AA-3183-4414-9C39-FC6B9A98845F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB9C51AA-3183-4414-9C39-FC6B9A98845F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB9C51AA-3183-4414-9C39-FC6B9A98845F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
