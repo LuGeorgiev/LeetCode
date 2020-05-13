@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimAlgorithm", "PrimAlgori
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximalIndependantSets", "MaximalIndependantSets\MaximalIndependantSets.csproj", "{107DBC5E-E75C-4D6F-9D41-829D3C20049A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominatingSets", "DominatingSets\DominatingSets.csproj", "{7C0FF26E-7A04-4025-9D74-D94ED715CCE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C0FF26E-7A04-4025-9D74-D94ED715CCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0FF26E-7A04-4025-9D74-D94ED715CCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0FF26E-7A04-4025-9D74-D94ED715CCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0FF26E-7A04-4025-9D74-D94ED715CCE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
