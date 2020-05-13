@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KruskalAlgorithm", "Kruskal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimAlgorithm", "PrimAlgorithm\PrimAlgorithm.csproj", "{AF5C3846-DA56-439E-8278-27E1A1235499}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximalIndependantSets", "MaximalIndependantSets\MaximalIndependantSets.csproj", "{107DBC5E-E75C-4D6F-9D41-829D3C20049A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{AF5C3846-DA56-439E-8278-27E1A1235499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF5C3846-DA56-439E-8278-27E1A1235499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF5C3846-DA56-439E-8278-27E1A1235499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107DBC5E-E75C-4D6F-9D41-829D3C20049A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
