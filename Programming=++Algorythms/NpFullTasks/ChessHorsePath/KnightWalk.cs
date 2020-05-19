@@ -39,7 +39,7 @@ namespace ChessKnightPath
                 PrintBoard();
                 wasSolved = true;
 
-                // backtrack before returning
+                // backtrack before returning. needed when ALL paths are needed
                 board[x, y] = 0;
                 return;
             }
@@ -48,14 +48,13 @@ namespace ChessKnightPath
             {
                 nextMoveX = x + xStep[step];
                 nextMoveY = y + yStep[step];
+
                 if (nextMoveX >= 0 && nextMoveX < BOARD_DIMETION
                     && nextMoveY >= 0 && nextMoveY < BOARD_DIMETION
                     && board[nextMoveX, nextMoveY] == 0)
                 {
                     NextMove(nextMoveX, nextMoveY, count + 1);
-                }
-                
-
+                }   
             }
 
             // backtrack from current square and remove it from current path
@@ -76,6 +75,7 @@ namespace ChessKnightPath
 
             if (!shouldPrintAll)
             {
+                //Exit i fonly one path is needed
                 Environment.Exit(0);
             }
         }
