@@ -23,13 +23,13 @@ namespace LongestSimplePathInOrientedGraph
         private static bool[] visited = Enumerable.Repeat(false, VERTECIES_COUNT).ToArray();
         private static int maxLen = 0;
         private static int tempLen = 0;
-        private static int si = 0;
-        private static int ti = 0;
+        private static int savedIndex = 0;
+        private static int tempIndex = 0;
 
         public static void Find()
         {
-            si = 0;
-            ti = 1;
+            savedIndex = 0;
+            tempIndex = 1;
             for (int vertex = 0; vertex < VERTECIES_COUNT; vertex++)
             {
                 visited[vertex] = true;
@@ -39,7 +39,7 @@ namespace LongestSimplePathInOrientedGraph
             }
 
             Console.WriteLine("Longest path is:");
-            for (int i = 0; i < si; i++)
+            for (int i = 0; i < savedIndex; i++)
             {
                 Console.Write($"{savedPath[i] + 1} ");
             }
@@ -52,11 +52,11 @@ namespace LongestSimplePathInOrientedGraph
             if (tempLen > maxLen)
             {
                 maxLen = tempLen;
-                for (int i = 0; i <= ti; i++)
+                for (int i = 0; i <= tempIndex; i++)
                 {
                     savedPath[i] = vertexVector[i];
                 }
-                si = ti;
+                savedIndex = tempIndex;
             }
 
             for (int col = 0; col < VERTECIES_COUNT; col++)
@@ -65,12 +65,12 @@ namespace LongestSimplePathInOrientedGraph
                 {
                     tempLen += graph[vertex, col];
                     visited[col] = true;
-                    vertexVector[ti++] = col;
+                    vertexVector[tempIndex++] = col;
                     AddVertex(col);
 
                     visited[col] = false;
                     tempLen -= graph[vertex, col];
-                    ti--;
+                    tempIndex--;
                 }
             }
         }
