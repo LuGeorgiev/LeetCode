@@ -90,7 +90,8 @@ namespace Translation
 
             for (int symbolIndex = 0; symbolIndex < SYMBOLS_COUNT; symbolIndex++)
             {
-                int len = code[]
+                //TODO check corerctness
+                int len = code[symbolIndex].Length;
             }
         }
     }
