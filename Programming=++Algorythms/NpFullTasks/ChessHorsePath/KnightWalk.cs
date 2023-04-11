@@ -75,7 +75,7 @@ namespace ChessKnightPath
 
             if (!shouldPrintAll)
             {
-                //Exit i fonly one path is needed
+                //Exit if only one path is needed
                 Environment.Exit(0);
             }
         }

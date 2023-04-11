@@ -6,7 +6,7 @@ namespace Translation
 {
     public class BgMorseCode
     {
-        private const int SYMBOLS_COUNT = 38;
+        private const int SYMBOLS_COUNT = 38; //n
         private const int MAX_WORD_LEN = 200;
 
         private static char[] symbols = new char[SYMBOLS_COUNT];
@@ -62,14 +62,13 @@ namespace Translation
         private static void PrintTranslation()
         {
             translationsCount++;
-            for (int i = 0; i < translationIndex; i++)
-            {
-                Console.Write(symbols[i]);
-            }
+            for (int i = 0; i < translationIndex; i++)            
+                Console.Write(symbols[translationVector[ i ]]);
+            
             Console.WriteLine();
         }
 
-        private static void Decode()
+        public static void Decode()
         {
             Console.WriteLine("Following a list of all possible translations:");
             InitializeCodeMap();
@@ -92,6 +91,23 @@ namespace Translation
             {
                 //TODO check corerctness
                 int len = code[symbolIndex].Length;
+                int i;
+                for (i = 0; i < len; i++) 
+                {
+                    var outOfCodeLen = i >= code[symbolIndex].Length;
+                    var outOfTranslationLen = i + index >= toTranslate.Length;
+
+                    if (outOfCodeLen || outOfTranslationLen 
+                        || toTranslate[i + index] != code[symbolIndex][i])
+                        break;
+                }               
+
+                if (i == len)//current symbols group are like those in code
+                {
+                    translationVector[translationIndex++] = symbolIndex;
+                    NextLetter(index + code[symbolIndex].Length);
+                    translationIndex--;
+                }
             }
         }
     }
