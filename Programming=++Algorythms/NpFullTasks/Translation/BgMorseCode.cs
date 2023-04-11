@@ -89,7 +89,6 @@ namespace Translation
 
             for (int symbolIndex = 0; symbolIndex < SYMBOLS_COUNT; symbolIndex++)
             {
-                //TODO check corerctness
                 int len = code[symbolIndex].Length;
                 int i;
                 for (i = 0; i < len; i++) 
@@ -97,9 +96,12 @@ namespace Translation
                     var outOfCodeLen = i >= code[symbolIndex].Length;
                     var outOfTranslationLen = i + index >= toTranslate.Length;
 
-                    if (outOfCodeLen || outOfTranslationLen 
+                    if (outOfCodeLen
+                        || outOfTranslationLen
                         || toTranslate[i + index] != code[symbolIndex][i])
+                    {
                         break;
+                    }
                 }               
 
                 if (i == len)//current symbols group are like those in code
