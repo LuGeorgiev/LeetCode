@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_2", "7.2.Major
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_3", "7.2.Majorant_3\7.2.Majorant_3.csproj", "{0456B535-F675-44F0-904D-BB2C30D91358}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_6", "7.2.Majorant_6\7.2.Majorant_6.csproj", "{9C51C1A7-562A-4992-A56E-70F527BBC492}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0456B535-F675-44F0-904D-BB2C30D91358}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0456B535-F675-44F0-904D-BB2C30D91358}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0456B535-F675-44F0-904D-BB2C30D91358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

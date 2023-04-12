@@ -1,6 +1,6 @@
 ﻿namespace _7._2.Majorant_3
 {
-    internal class Program
+    internal class HeapSortMajority
     {   
         static void Main(string[] args)
         {
