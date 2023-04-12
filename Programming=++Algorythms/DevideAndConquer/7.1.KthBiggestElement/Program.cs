@@ -93,7 +93,6 @@ namespace _7._1.KthBiggestElement
                     ShiftMin(left, right);
 
             /*(k - 1) - кратно премахване на минималния елемент */
-
             for (int i = ARRAY_ELMENTS - 1; i >= ARRAY_ELMENTS - kthElement; i--)
             {
                 arr[0] = arr[i];
