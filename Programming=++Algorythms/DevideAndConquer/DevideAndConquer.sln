@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_3", "7.2.Major
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_6", "7.2.Majorant_6\7.2.Majorant_6.csproj", "{9C51C1A7-562A-4992-A56E-70F527BBC492}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_7", "7.2.Majorant_7\7.2.Majorant_7.csproj", "{0C89E396-E658-49C6-AD59-CF51C0664D92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C51C1A7-562A-4992-A56E-70F527BBC492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C89E396-E658-49C6-AD59-CF51C0664D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C89E396-E658-49C6-AD59-CF51C0664D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C89E396-E658-49C6-AD59-CF51C0664D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C89E396-E658-49C6-AD59-CF51C0664D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
