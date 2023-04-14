@@ -8,10 +8,10 @@ namespace _7._2.Majorant_12
         {
             char[] array = { 'A', 'A', 'A', 'C'};
 
-            Console.WriteLine(ExtractMajority(array));
+            Console.WriteLine(CheckMajority(array));
         }
 
-        private static (bool hasMajorant, T value) ExtractMajority<T>(T[] input)
+        private static (bool hasMajorant, T value) CheckMajority<T>(T[] input)
            where T : struct
         {
             var stack = new Stack<T>();

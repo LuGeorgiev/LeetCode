@@ -3,25 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.1.FindMinAndMaxElement", "7.1.FindMinAndMaxElement\7.1.FindMinAndMaxElement.csproj", "{A2778450-638C-4E6B-82B0-6B77E31CF8AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.1.FindMinAndMaxElement", "7.1.FindMinAndMaxElement\7.1.FindMinAndMaxElement.csproj", "{A2778450-638C-4E6B-82B0-6B77E31CF8AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.1.KthBiggestElement", "7.1.KthBiggestElement\7.1.KthBiggestElement.csproj", "{0B2AA4F1-1131-4B80-A529-D591036D222E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.1.KthBiggestElement", "7.1.KthBiggestElement\7.1.KthBiggestElement.csproj", "{0B2AA4F1-1131-4B80-A529-D591036D222E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_1", "7.2.Majorant_1\7.2.Majorant_1.csproj", "{4DFFB7E3-0D7D-439C-98E0-8AD18A16DE6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_1", "7.2.Majorant_1\7.2.Majorant_1.csproj", "{4DFFB7E3-0D7D-439C-98E0-8AD18A16DE6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_2", "7.2.Majorant_2\7.2.Majorant_2.csproj", "{131A18B4-CA55-4E30-9CBF-54F92F9AF698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_2", "7.2.Majorant_2\7.2.Majorant_2.csproj", "{131A18B4-CA55-4E30-9CBF-54F92F9AF698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_3", "7.2.Majorant_3\7.2.Majorant_3.csproj", "{0456B535-F675-44F0-904D-BB2C30D91358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_3", "7.2.Majorant_3\7.2.Majorant_3.csproj", "{0456B535-F675-44F0-904D-BB2C30D91358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_6", "7.2.Majorant_6\7.2.Majorant_6.csproj", "{9C51C1A7-562A-4992-A56E-70F527BBC492}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_6", "7.2.Majorant_6\7.2.Majorant_6.csproj", "{9C51C1A7-562A-4992-A56E-70F527BBC492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_7", "7.2.Majorant_7\7.2.Majorant_7.csproj", "{0C89E396-E658-49C6-AD59-CF51C0664D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_7", "7.2.Majorant_7\7.2.Majorant_7.csproj", "{0C89E396-E658-49C6-AD59-CF51C0664D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_8", "7.2.Majorant_8\7.2.Majorant_8.csproj", "{8CDDF4A9-9219-47C2-9E9D-D165E5FE0A49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_8", "7.2.Majorant_8\7.2.Majorant_8.csproj", "{8CDDF4A9-9219-47C2-9E9D-D165E5FE0A49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_10", "7.2.Majorant_10\7.2.Majorant_10.csproj", "{A0322263-4BD0-4AB9-BEF9-96BEF0D9CE90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_10", "7.2.Majorant_10\7.2.Majorant_10.csproj", "{A0322263-4BD0-4AB9-BEF9-96BEF0D9CE90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.Majorant_12", "7.2.Majorant_12\7.2.Majorant_12.csproj", "{8F139511-4749-4458-8A6F-1BFAE28B14C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majorant_12", "7.2.Majorant_12\7.2.Majorant_12.csproj", "{8F139511-4749-4458-8A6F-1BFAE28B14C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majority_13", "7.2.Majority_13\7.2.Majority_13.csproj", "{C20CCD3A-6483-4820-BE44-9348F803B9EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.MergeSortedLinkedList", "7.3.MergeSortedLinkedList\7.3.MergeSortedLinkedList.csproj", "{6389EC2E-07B0-40C3-BD56-F5BBA6EFB666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3.MergeSortedArraysIterrative", "7.3.MergeSortedArraysIterrative\7.3.MergeSortedArraysIterrative.csproj", "{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,18 @@ Global
 		{8F139511-4749-4458-8A6F-1BFAE28B14C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F139511-4749-4458-8A6F-1BFAE28B14C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F139511-4749-4458-8A6F-1BFAE28B14C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20CCD3A-6483-4820-BE44-9348F803B9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20CCD3A-6483-4820-BE44-9348F803B9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20CCD3A-6483-4820-BE44-9348F803B9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20CCD3A-6483-4820-BE44-9348F803B9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6389EC2E-07B0-40C3-BD56-F5BBA6EFB666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6389EC2E-07B0-40C3-BD56-F5BBA6EFB666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6389EC2E-07B0-40C3-BD56-F5BBA6EFB666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6389EC2E-07B0-40C3-BD56-F5BBA6EFB666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
