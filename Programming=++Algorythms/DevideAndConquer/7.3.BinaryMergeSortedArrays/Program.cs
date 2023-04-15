@@ -34,10 +34,11 @@ namespace _7._3.BinaryMergeSortedArrays
 
             while (firstLen > 0 && secondLen > 0) 
             {
-                power = (int)(Math.Log(firstLen / secondLen) / Math.Log(2));
-                elementsCount = 1 << power;
                 if (secondLen <= firstLen) 
                 {
+                    power = (int)(Math.Log(firstLen / secondLen) / Math.Log(2));
+                    elementsCount = 1 << power;
+
                     if (secondArr[secondLen - 1] < firstArr[firstLen - elementsCount])
                     {
                         /* Прехвърляне на a[n-t2-1],...,a[n] в изходната последователност */
@@ -50,7 +51,7 @@ namespace _7._3.BinaryMergeSortedArrays
                     {
                         searchedIndex = BinarySearch(firstArr, firstLen - elementsCount, firstLen - 1, secondArr[secondLen - 1]);
                         for (int i = 0; i < firstLen - searchedIndex - 1; i++)
-                            result[totalLength - firstLen + i + 1] = firstArr[searchedIndex + i + 1];
+                            result[totalLength - firstLen + searchedIndex + i + 1] = firstArr[searchedIndex + i + 1];
                         totalLength -= firstLen - searchedIndex - 1;
                         firstLen = searchedIndex + 1;
                         result[--totalLength] = secondArr[--secondLen];
@@ -58,6 +59,9 @@ namespace _7._3.BinaryMergeSortedArrays
                 }
                 else
                 {
+                    power = (int)(Math.Log(secondLen / firstLen) / Math.Log(2));
+                    elementsCount = 1 << power;
+
                     if (firstArr[firstLen - 1] < secondArr[secondLen - elementsCount])
                     {
                         totalLength -= elementsCount;
