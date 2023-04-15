@@ -9,11 +9,12 @@ namespace _7._3.MergeSortedLinkedList
         public Node? Next { get; set; }
     }
 
-    internal class SortedLinkedList
+    internal class MergeLinkedList
     {
         static void Main(string[] args)
         {
-            var nodesCount = 6;
+            var nodesCount = 19;
+            //NB Note that LinkedList is NOT sorted but become sorted
             Node linkedListNode = Generae(nodesCount);
             Console.WriteLine( "Before sorting");
             PrintList(linkedListNode);
@@ -34,14 +35,14 @@ namespace _7._3.MergeSortedLinkedList
             var halfCount = nodesCount / 2;
 
             //split the list into two equal parts
-            for (int i = 0; i <= halfCount; i++)
+            for (int i = 2; i <= halfCount; i++)
                 linkedListNode = linkedListNode.Next!;
 
             var rightNode = linkedListNode.Next;
             linkedListNode.Next = null;
 
             //Sorting the two tarts separetly then merging
-            return Merge(MergeSort(leftNode, halfCount), MergeSort(rightNode!, nodesCount - halfCount));
+            return Merge(MergeSort(leftNode, halfCount ), MergeSort(rightNode!, nodesCount - halfCount));
         }
 
         private static Node Merge(Node a, Node b)
@@ -51,7 +52,29 @@ namespace _7._3.MergeSortedLinkedList
             var head = tail;
 
             while (true)
-            { }
+            {
+                if (a.Value < b.Value)
+                {
+                    tail.Next = a;
+                    a = a.Next;
+                    tail = tail.Next;
+                    if (a is null)
+                    {
+                        tail.Next = b;
+                        break;
+                    }
+                }
+                else 
+                {
+                    tail.Next = b;
+                    b = b.Next;
+                    tail = tail.Next;
+                    if (b is null)
+                    {
+                        tail.Next = a;
+                        break;
+                    }
+                }
             }
 
             return head.Next!;

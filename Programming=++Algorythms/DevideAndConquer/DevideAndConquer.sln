@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.MergeSortedLinkedList",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3.MergeSortedArraysIterrative", "7.3.MergeSortedArraysIterrative\7.3.MergeSortedArraysIterrative.csproj", "{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3.BinaryMergeSortedArrays", "7.3.BinaryMergeSortedArrays\7.3.BinaryMergeSortedArrays.csproj", "{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
