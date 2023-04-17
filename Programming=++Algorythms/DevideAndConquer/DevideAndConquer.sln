@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.Majority_13", "7.2.Majo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.MergeSortedLinkedList", "7.3.MergeSortedLinkedList\7.3.MergeSortedLinkedList.csproj", "{6389EC2E-07B0-40C3-BD56-F5BBA6EFB666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3.MergeSortedArraysIterrative", "7.3.MergeSortedArraysIterrative\7.3.MergeSortedArraysIterrative.csproj", "{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.MergeSortedArraysIterrative", "7.3.MergeSortedArraysIterrative\7.3.MergeSortedArraysIterrative.csproj", "{698D23D7-E2AF-441E-BCA1-E42D8FDAB03B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3.BinaryMergeSortedArrays", "7.3.BinaryMergeSortedArrays\7.3.BinaryMergeSortedArrays.csproj", "{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.BinaryMergeSortedArrays", "7.3.BinaryMergeSortedArrays\7.3.BinaryMergeSortedArrays.csproj", "{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.4.MergeSortArray", "7.4.MergeSortArray\7.4.MergeSortArray.csproj", "{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
