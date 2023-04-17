@@ -12,6 +12,14 @@
             Console.WriteLine( result);
         }
 
+        // 1) x1
+        // 2) x2 = x1.x1
+        // 3) x3 = x2.x1
+        // 4) x6 = x3.x3
+        // 5) x7 = x6.x1
+        // 6) x14 = x7.x7
+        // 7) x15 = x14.x1
+
         private static double FastPow(double number, int power)
         {
             if (power == 0)
