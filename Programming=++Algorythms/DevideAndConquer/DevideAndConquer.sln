@@ -33,6 +33,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.BinaryMergeSortedArrays
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.4.MergeSortArray", "7.4.MergeSortArray\7.4.MergeSortArray.csproj", "{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortOfLinkedList", "MergeSortOfLinkedList\MergeSortOfLinkedList.csproj", "{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.5.FastPow", "7.5.FastPow\7.5.FastPow.csproj", "{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
