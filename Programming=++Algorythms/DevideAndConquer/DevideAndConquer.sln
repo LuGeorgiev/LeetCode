@@ -31,13 +31,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.MergeSortedArraysIterra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.BinaryMergeSortedArrays", "7.3.BinaryMergeSortedArrays\7.3.BinaryMergeSortedArrays.csproj", "{051B4A8B-BD76-4B94-A3D2-59C4512B2B27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.4.MergeSortArray", "7.4.MergeSortArray\7.4.MergeSortArray.csproj", "{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.4.MergeSortArray", "7.4.MergeSortArray\7.4.MergeSortArray.csproj", "{E86A03BC-E4B0-40C4-A3D3-D55646CC6939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortOfLinkedList", "MergeSortOfLinkedList\MergeSortOfLinkedList.csproj", "{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSortOfLinkedList", "MergeSortOfLinkedList\MergeSortOfLinkedList.csproj", "{F7F84035-8F3B-4FF1-8815-50ED4B53FAC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.5.FastPow", "7.5.FastPow\7.5.FastPow.csproj", "{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.5.FastPow", "7.5.FastPow\7.5.FastPow.csproj", "{86BDF573-F7B1-4DA5-A9C3-66E003EBA37F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.5.FastPowBenchmark", "7.5.FastPowBenchmark\7.5.FastPowBenchmark.csproj", "{E284F2FB-38A4-4B94-AF00-734F85AE7F44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.5.FastPowBenchmark", "7.5.FastPowBenchmark\7.5.FastPowBenchmark.csproj", "{E284F2FB-38A4-4B94-AF00-734F85AE7F44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.8.HanoyTowers", "7.8.HanoyTowers\7.8.HanoyTowers.csproj", "{3069DF28-3E23-4E13-8998-EAA20E11C8F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.8.HanoyTower_SecondWay", "7.8.HanoyTower_SecondWay\7.8.HanoyTower_SecondWay.csproj", "{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +121,14 @@ Global
 		{E284F2FB-38A4-4B94-AF00-734F85AE7F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E284F2FB-38A4-4B94-AF00-734F85AE7F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E284F2FB-38A4-4B94-AF00-734F85AE7F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3069DF28-3E23-4E13-8998-EAA20E11C8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3069DF28-3E23-4E13-8998-EAA20E11C8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3069DF28-3E23-4E13-8998-EAA20E11C8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3069DF28-3E23-4E13-8998-EAA20E11C8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
