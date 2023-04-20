@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.8.HanoyTowers", "7.8.Hano
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.8.HanoyTower_SecondWay", "7.8.HanoyTower_SecondWay\7.8.HanoyTower_SecondWay.csproj", "{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.9.TournametPowerTwo", "7.9.TournametPowerTwo\7.9.TournametPowerTwo.csproj", "{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
