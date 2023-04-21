@@ -39,11 +39,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.5.FastPow", "7.5.FastPow\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.5.FastPowBenchmark", "7.5.FastPowBenchmark\7.5.FastPowBenchmark.csproj", "{E284F2FB-38A4-4B94-AF00-734F85AE7F44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.8.HanoyTowers", "7.8.HanoyTowers\7.8.HanoyTowers.csproj", "{3069DF28-3E23-4E13-8998-EAA20E11C8F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.8.HanoyTowers", "7.8.HanoyTowers\7.8.HanoyTowers.csproj", "{3069DF28-3E23-4E13-8998-EAA20E11C8F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.8.HanoyTower_SecondWay", "7.8.HanoyTower_SecondWay\7.8.HanoyTower_SecondWay.csproj", "{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.8.HanoyTower_SecondWay", "7.8.HanoyTower_SecondWay\7.8.HanoyTower_SecondWay.csproj", "{4DA192C2-2F5A-43DF-B4F5-D57213F77D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.9.TournametPowerTwo", "7.9.TournametPowerTwo\7.9.TournametPowerTwo.csproj", "{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.9.TournametPowerTwo", "7.9.TournametPowerTwo\7.9.TournametPowerTwo.csproj", "{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.9.Tournament_3", "7.9.Tournament_3\7.9.Tournament_3.csproj", "{6888CD54-E336-4587-9705-A8E1F0DAD423}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8C59E63-7D0E-4686-9A59-1A3DCF93E57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6888CD54-E336-4587-9705-A8E1F0DAD423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6888CD54-E336-4587-9705-A8E1F0DAD423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6888CD54-E336-4587-9705-A8E1F0DAD423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6888CD54-E336-4587-9705-A8E1F0DAD423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
