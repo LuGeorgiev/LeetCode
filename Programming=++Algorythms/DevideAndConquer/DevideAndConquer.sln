@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.9.Tournament_3", "7.9.Tou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.10.Shift_1", "7.10.Shift_1\7.10.Shift_1.csproj", "{6955B2C7-9FA5-442F-8C6B-9FC6095D5875}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.10.Shift_2", "7.10.Shift_2\7.10.Shift_2.csproj", "{F800CB4F-DF46-4EE7-9CF1-44FEC6CF3BA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{6955B2C7-9FA5-442F-8C6B-9FC6095D5875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6955B2C7-9FA5-442F-8C6B-9FC6095D5875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6955B2C7-9FA5-442F-8C6B-9FC6095D5875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F800CB4F-DF46-4EE7-9CF1-44FEC6CF3BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F800CB4F-DF46-4EE7-9CF1-44FEC6CF3BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F800CB4F-DF46-4EE7-9CF1-44FEC6CF3BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F800CB4F-DF46-4EE7-9CF1-44FEC6CF3BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
