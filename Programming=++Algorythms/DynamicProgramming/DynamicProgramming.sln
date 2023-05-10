@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2.BrothersShare", "8.2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2.BrothersShare_2", "8.2.2.BrothersShare_2\8.2.2.BrothersShare_2.csproj", "{B0CBA413-2519-4B67-8177-707ABCE635CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.3.MatrixMultiply_Recursive", "8.2.3.MatrixMultiply_Recursive\8.2.3.MatrixMultiply_Recursive.csproj", "{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B0CBA413-2519-4B67-8177-707ABCE635CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0CBA413-2519-4B67-8177-707ABCE635CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0CBA413-2519-4B67-8177-707ABCE635CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
