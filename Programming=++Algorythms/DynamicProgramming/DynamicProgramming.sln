@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2.BrothersShare_2", "8.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.3.MatrixMultiply_Recursive", "8.2.3.MatrixMultiply_Recursive\8.2.3.MatrixMultiply_Recursive.csproj", "{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.3.MatrixMultiply_Memoization", "8.2.3.MatrixMultiply_Memoization\8.2.3.MatrixMultiply_Memoization.csproj", "{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
