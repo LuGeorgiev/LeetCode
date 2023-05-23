@@ -11,17 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.Knapsack_3b", "8.2.Knap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.Knapsack_5", "8.2.Knapsack_5\8.2.Knapsack_5.csproj", "{D8D27E88-512A-4D3D-8CBF-AF21064312A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2.BrothersShare", "8.2.2.BrothersShare\8.2.2.BrothersShare.csproj", "{A4C49A84-3C9C-4F7F-B8CE-91E001F59CE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.2.BrothersShare", "8.2.2.BrothersShare\8.2.2.BrothersShare.csproj", "{A4C49A84-3C9C-4F7F-B8CE-91E001F59CE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2.BrothersShare_2", "8.2.2.BrothersShare_2\8.2.2.BrothersShare_2.csproj", "{B0CBA413-2519-4B67-8177-707ABCE635CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.2.BrothersShare_2", "8.2.2.BrothersShare_2\8.2.2.BrothersShare_2.csproj", "{B0CBA413-2519-4B67-8177-707ABCE635CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.3.MatrixMultiply_Recursive", "8.2.3.MatrixMultiply_Recursive\8.2.3.MatrixMultiply_Recursive.csproj", "{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.3.MatrixMultiply_Recursive", "8.2.3.MatrixMultiply_Recursive\8.2.3.MatrixMultiply_Recursive.csproj", "{FC82F4E6-9AAF-41DD-8E82-B5FB88A802CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.3.MatrixMultiply_Memoization", "8.2.3.MatrixMultiply_Memoization\8.2.3.MatrixMultiply_Memoization.csproj", "{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.3.MatrixMultiply_Memoization", "8.2.3.MatrixMultiply_Memoization\8.2.3.MatrixMultiply_Memoization.csproj", "{4B93EAC0-C92B-425A-B13C-9F0B3A52FE6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.3.MatrixCount_Full", "8.2.3.MatrixCount_Full\8.2.3.MatrixCount_Full.csproj", "{C152E9D8-080E-4E9F-8B7B-5C2CDF6C6E7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.3.MatrixCount_Full", "8.2.3.MatrixCount_Full\8.2.3.MatrixCount_Full.csproj", "{C152E9D8-080E-4E9F-8B7B-5C2CDF6C6E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.4.Cathlan_1", "8.2.4.Cathlan_1\8.2.4.Cathlan_1.csproj", "{7078142D-AAED-49CF-91D7-66E304B2B0DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.4.Cathlan_1", "8.2.4.Cathlan_1\8.2.4.Cathlan_1.csproj", "{7078142D-AAED-49CF-91D7-66E304B2B0DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.5.OptimalBinarySearchTree", "8.2.5.OptimalBinarySearchTree\8.2.5.OptimalBinarySearchTree.csproj", "{A21DF6AA-3BE5-43CA-BA3F-7A0883946A6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{7078142D-AAED-49CF-91D7-66E304B2B0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7078142D-AAED-49CF-91D7-66E304B2B0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7078142D-AAED-49CF-91D7-66E304B2B0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A21DF6AA-3BE5-43CA-BA3F-7A0883946A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21DF6AA-3BE5-43CA-BA3F-7A0883946A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21DF6AA-3BE5-43CA-BA3F-7A0883946A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21DF6AA-3BE5-43CA-BA3F-7A0883946A6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
