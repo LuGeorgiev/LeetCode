@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-        private const string FirstLine = "acbcacbcaba";
+        private const string FirstLine =  "acbcacbcaba";
         private const string SecondLine = "abacacacababa";
 
-        private static readonly int firstLength = FirstLine.Length; //m
-        private static readonly int secondLength = SecondLine.Length; //n
+        private static readonly int firstLength = FirstLine.Length; 
+        private static readonly int secondLength = SecondLine.Length; 
         private static readonly int[,] matrix = new int[firstLength + 1, secondLength + 1];
 
         static void Main(string[] args)
@@ -24,8 +24,6 @@
                         matrix[i, j] = Math.Max(matrix[i - 1, j], matrix[i, j - 1]);
 
             return matrix[firstLength, secondLength];
-        }
-
-        
+        }        
     }
 }
