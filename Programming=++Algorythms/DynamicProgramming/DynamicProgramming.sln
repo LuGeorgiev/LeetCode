@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.4.Cathlan_1", "8.2.4.Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.5.OptimalBinarySearchTree", "8.2.5.OptimalBinarySearchTree\8.2.5.OptimalBinarySearchTree.csproj", "{A21DF6AA-3BE5-43CA-BA3F-7A0883946A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.6.LongestSubSequence", "8.2.6.LongestSubSequence\8.2.6.LongestSubSequence.csproj", "{40DE26B7-1872-4538-B67F-8B1C45CC1BFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.6.LongestSubSequence", "8.2.6.LongestSubSequence\8.2.6.LongestSubSequence.csproj", "{40DE26B7-1872-4538-B67F-8B1C45CC1BFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.6.LongestSubSequencePrint", "8.2.6.LongestSubSequencePrint\8.2.6.LongestSubSequencePrint.csproj", "{8B5A3CE4-01D4-4661-9CBC-036E8AF1C9BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.6.LongestSubSequencePrint", "8.2.6.LongestSubSequencePrint\8.2.6.LongestSubSequencePrint.csproj", "{8B5A3CE4-01D4-4661-9CBC-036E8AF1C9BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox", "SandBox\SandBox.csproj", "{638231DC-F54A-4312-861F-768B330535B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.7.LongestNonDecreasingSequence", "8.2.7.LongestNonDecreasingSequence\8.2.7.LongestNonDecreasingSequence.csproj", "{EFCCF30D-3187-4225-BA0E-AF4C093E6C89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{8B5A3CE4-01D4-4661-9CBC-036E8AF1C9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B5A3CE4-01D4-4661-9CBC-036E8AF1C9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B5A3CE4-01D4-4661-9CBC-036E8AF1C9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{638231DC-F54A-4312-861F-768B330535B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638231DC-F54A-4312-861F-768B330535B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638231DC-F54A-4312-861F-768B330535B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{638231DC-F54A-4312-861F-768B330535B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCCF30D-3187-4225-BA0E-AF4C093E6C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCCF30D-3187-4225-BA0E-AF4C093E6C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCCF30D-3187-4225-BA0E-AF4C093E6C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCCF30D-3187-4225-BA0E-AF4C093E6C89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
